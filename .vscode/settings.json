@@ -1,0 +1,34 @@
+{
+    "liveServer.settings.port": 80,
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.https": {
+        "enable": false,
+        "cert": "",
+        "key": "",
+        "passphrase": "",
+    },
+    "liveServer.settings.proxy": {
+        "enable": false,
+        "baseUri": "/api",
+        "proxyUri": "http://localhost:3000"
+    },
+    "liveServer.settings.CustomBrowser": "chrome:PrivateMode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    },
+    "cSpell.words": [
+        "Calibri"
+    ],
+    "cSpell.ignoreWords": [
+        "align",
+        "center",
+        "color",
+        "em",
+        "middle",
+        "rgba",
+        "shadow",
+        "text",
+        "vertical"
+    ]
+}

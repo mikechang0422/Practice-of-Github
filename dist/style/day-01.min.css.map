@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/day-01.scss"
+    ],
+    "names": [],
+    "file": "day-01.min.css"
+}

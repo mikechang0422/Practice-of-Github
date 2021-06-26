@@ -1,0 +1,160 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+.warp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
+  font-family: 'Helvetica', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.warp > h1 {
+  color: rgba(255, 0, 255, 0.9);
+  text-shadow: 0 0 0.2em rgba(111, 51, 129, 0.7), 0 0 0.2em rgba(111, 51, 129, 0.7), 0 0 0.2em rgba(111, 51, 129, 0.7);
+}
+
+.warp .grid {
+  padding: 1em;
+  margin: 1em auto;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.warp .grid > h1 {
+  margin: 1em auto;
+  line-height: 2.5em;
+}
+
+.warp .grid > p {
+  margin: 1em auto;
+  font-size: 1.5em;
+  color: rgba(111, 51, 129, 0.7);
+  text-shadow: -1px -1px #fff, 1px 1px #333;
+  line-height: 2em;
+}
+
+.warp .grid > p > span {
+  padding: 0 1em;
+  text-shadow: 1px 1px #fff, -1px -1px #444;
+}
+
+.warp .grid > button {
+  padding: 0.3em 0.8em;
+  font-size: 125%;
+  border: 1px rgba(0, 0, 0, 0.1) solder;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0 0.05em 0.25em #808080;
+          box-shadow: 0 0.05em 0.25em #808080;
+  text-shadow: 0 -0.05em 0.05em #335166;
+  line-height: 1.5;
+}
+
+.warp .grid > .item-girl {
+  color: #faa;
+  background: #faa -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(transparent));
+  background: #faa linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  text-shadow: -1px 0 #000, 0 1px #000,1px 0 #000, 0 -1px #000;
+}
+
+.warp .grid > .item-boy {
+  color: #aff;
+  background: #aff -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.2)), to(transparent));
+  background: #aff linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+  text-shadow: -1px 0 #000, 0 1px #000,1px 0 #000, 0 -1px #000;
+}
+
+.warp .purple {
+  color: rgba(255, 0, 255, 0.9);
+  background: linear-gradient(90deg, #fff 1px, transparent 0), linear-gradient(#fff 1px, transparent 0);
+  background-size: 30px 30px;
+  background-color: rgba(111, 51, 129, 0.7);
+  text-shadow: 0.1em -0.1em 0.05em #333,0.1em -0.1em 0.2em #000;
+}
+
+.warp .blue {
+  color: #0aa;
+  background: #58a;
+  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+  text-shadow: 0.1em -0.1em 0.05em #333,0.1em -0.1em 0.2em #000;
+  background-image: linear-gradient(#fff 2px, transparent 0), linear-gradient(90deg, #fff 2px, transparent 0), linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 0), linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 0);
+}
+
+.warp .polka {
+  background: #655;
+  background-position: 0 0, 15px 15px;
+  background-size: 30px 30px;
+  background-image: radial-gradient(#d2b48c 30%, transparent 0), radial-gradient(#d2b48c 30%, transparent 0);
+  color: #9b8c8c;
+  text-shadow: 0.1em -0.1em 0.05em #333,0.1em -0.1em 0.2em #000;
+}
+
+.warp .svg {
+  color: #666;
+  background: #eee url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity=".25" ><rect x="50" width="50" height="50" /><rect y="50" width="50" height="50" /></svg>');
+  background-size: 30px 30px;
+  text-shadow: 0.1em -0.1em 0.05em #333,0.1em -0.1em 0.2em #000;
+}
+
+.warp .mail {
+  border: 1em solid transparent;
+  -o-border-image: 16 repeating-linear-gradient(-45deg, #f00 0, #f00 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+     border-image: 16 repeating-linear-gradient(-45deg, #f00 0, #f00 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+  font: Baskerville, Palatino, serif;
+}
+
+.warp .ant {
+  padding: 1em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, repeating-linear-gradient(-45deg, #000 0, #000 25%, #fff 0, #fff 50%) 0/0.6em 0.6em;
+  background: linear-gradient(#fff, #fff) padding-box, repeating-linear-gradient(-45deg, #000 0, #000 25%, #fff 0, #fff 50%) 0/0.6em 0.6em;
+  border: 1px solid transparent;
+  -webkit-animation: ants 50s linear infinite;
+          animation: ants 50s linear infinite;
+}
+
+@-webkit-keyframes ants {
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes ants {
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.warp .skew button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  text-transform: uppercase;
+  font: bold 200%/1 sans-serif;
+}
+
+.warp .skew button::before {
+  content: '';
+  /* To generate the box */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #58a;
+  -webkit-transform: skew(45deg);
+          transform: skew(45deg);
+}
+/*# sourceMappingURL=style.css.map */
