@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap");
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3b0b3f;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 1200px;
+}
+
+.item {
+  overflow: hidden;
+  margin: 15px;
+  width: 368px;
+  text-align: center;
+  background-color: #e9e9eb;
+  border: 1px solid #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.item h2 {
+  padding-bottom: 0.3em;
+  margin-bottom: 0.3em;
+  font-size: 1.5em;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-weight: 900;
+  border-bottom: 1px solid #000;
+  -webkit-transition: border , color 0.25s;
+  transition: border , color 0.25s;
+}
+
+.item p {
+  font-size: 1.25em;
+  color: #3481f9;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.item p a {
+  color: #4e1881;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.item .txt {
+  position: relative;
+  padding: 20px;
+}
+
+.item .txt::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 50px solid transparent;
+  border-left: 184px solid #e9e9eb;
+  border-right: 184px solid #e9e9eb;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.item:hover {
+  -webkit-transform: translateY(-3%);
+          transform: translateY(-3%);
+}
+
+.item:hover .txt {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9c25a7), to(#ed17f5));
+  background-image: linear-gradient(0deg, #9c25a7, #ed17f5);
+}
+
+.item:hover .txt::before {
+  border-left: 184px solid #ed17f5;
+  border-right: 184px solid #ed17f5;
+}
+
+.item:hover h2 {
+  color: #e9e9eb;
+  border-bottom-color: #e9e9eb;
+}
+
+.item:hover p {
+  color: #e9e9eb;
+}
+
+.item:hover p a {
+  color: #ffd700;
+}
+/*# sourceMappingURL=day-03.css.map */
