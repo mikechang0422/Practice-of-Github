@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap");
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.item {
+  position: relative;
+  width: 25%;
+}
+
+.item img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.item .txt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.item h2 {
+  font-size: 1.25em;
+  color: #db6cdb;
+  font-weight: 400;
+}
+
+.item h2::after {
+  display: block;
+  margin: 0.5em 0;
+  width: 0%;
+  height: 0.1em;
+  background-color: #e173e1;
+  border: 0.1em solid #000;
+  -webkit-transition: width 0.5s 0.1s;
+  transition: width 0.5s 0.1s;
+  content: '';
+}
+
+.item p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 100;
+}
+
+.item:hover .txt {
+  opacity: 1;
+}
+
+.item:hover h2::after {
+  width: 100%;
+}
+/*# sourceMappingURL=day-02.css.map */
