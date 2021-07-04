@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8FAAI,CAEZ,AAAA,CAAC,AAAC,CACA,WAAW,CAAE,0BAA0B,CACvC,eAAe,CAAE,IAAI,CACrB,UAAU,CAAE,IAAI,CAChB,UAAU,CAAE,UAAU,CACvB",
+    "sources": [
+        "../../scss/day-06.scss"
+    ],
+    "names": [],
+    "file": "day-06.min.css"
+}

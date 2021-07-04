@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8FAAI;AAEZ,AAAA,CAAC,CAAC;EACA,WAAW,EAAE,0BAA0B;EACvC,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,UAAU;CACvB",
+    "sources": [
+        "../scss/day-06.scss"
+    ],
+    "names": [],
+    "file": "day-06.css"
+}
