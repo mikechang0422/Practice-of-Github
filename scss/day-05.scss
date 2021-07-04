@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap');
+
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-30deg, #5cd4f8, #597fe7, #9670f7);
+
+  .container {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+
+  }
+}
+
+.item {
+  display: flex;
+  margin: 0 15px;
+  width: 400px;
+  max-width: 100%;
+  background-color: rgba(255, 250, 250, 0.7);
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 1em 1.5em rgba(0, 0, 160, 0.3);
+
+
+  .pic {
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .txt {
+    display: flex;
+    padding: 20px;
+    width: 50%;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 0.4em;
+      font-weight: 700;
+    }
+
+    p {
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .csscoke {
+      font-size: 1.25em;
+      color: #9670f7;
+      font-weight: 900;
+      transition: 0.3s 0.1s;
+    }
+
+    .csscoke:hover {
+      font-size: 1.5em;
+      color: #597fe7;
+    }
+
+    .btn {
+      padding: 0 1em;
+      margin-top: auto;
+      text-decoration: none;
+      color: #333;
+      border: 1px solid #708090;
+      border-radius: 200px;
+      text-shadow: 3px 3px rgba(51, 51, 51, 0.1);
+      transition: 0.3s,0.2s;
+      line-height: 1.5em;
+      align-self: flex-end;
+    }
+
+    .btn:hover {
+      background-color: #fafafa;
+      text-shadow: 5px 3px rgba(0, 0, 0, 0.3);
+    }
+
+  }
+}
