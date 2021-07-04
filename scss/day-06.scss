@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+* {
+  font-family: 'Noto Sans TC','Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.main-footer {
+  padding: 10em 0 0;
+  background-image: linear-gradient(-20deg, #1a9454, #1fa5c7);
+
+  .container {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    max-width: 100%;
+  }
+}
+
+.footer-item {
+  margin: 0 1.5em;
+  width: 0;
+  flex-grow: 1;
+
+  h4 {
+    padding-bottom: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      padding: 0.3em 0;
+      text-decoration: none;
+      color: #fff;
+      line-height: 1.4;
+      transition: 0.2s 0.1s;
+    }
+
+    a:hover {
+      color: #ffa500;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.conpyright {
+  padding: 1em 0;
+  margin: 10em 0 0;
+  width: 100%;
+  text-align: center;
+  color: rgb(110, 245, 222);
+  background-color: rgba(31, 165, 199, 0.882);
+}
+
+.subs {
+  display: flex;
+  flex-direction: column;
+
+  form {
+    display: flex;
+    padding-top: 0.5em;
+    margin: auto;
+    width: 100%;
+  }
+
+  input[type='text'],
+  input[type='submit'] {
+    border: none;
+  }
+
+  input[type='text'] {
+    width: 70%;
+  }
+
+  input[type='submit'] {
+    width: 30%;
+    color: #fff;
+    background: #5fd1bea2;
+  }
+}
