@@ -16,7 +16,7 @@
   
   .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     margin: auto;
@@ -25,7 +25,6 @@
   }
   
   .logo {
-    margin-bottom: 20px;
     max-width: 100px;
   
     img {
@@ -36,7 +35,6 @@
   
   .main-nav {
     display: flex;
-    margin: auto;
   
     a {
       position: relative;
@@ -66,5 +64,9 @@
       right: 0;
       left: 0;
     }
+  }
+
+  .main-nav:first-of-type {
+    order: -1;
   }
 }

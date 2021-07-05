@@ -16,16 +16,17 @@
   
   .container {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     margin: auto;
     width: 1200px;
     max-width: 100%;
+    height: 100px;
   }
   
   .logo {
-    margin-bottom: 20px;
+    position: absolute;
     max-width: 100px;
   
     img {
@@ -36,7 +37,6 @@
   
   .main-nav {
     display: flex;
-    margin: auto;
   
     a {
       position: relative;
@@ -49,6 +49,10 @@
   
     a:hover {
       transform: translateY(-5px);
+    }
+
+    a:nth-child(3) {
+      margin-left: 140px;
     }
   
     a::after {
@@ -67,4 +71,5 @@
       left: 0;
     }
   }
+
 }
