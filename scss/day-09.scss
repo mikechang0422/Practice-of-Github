@@ -10,3 +10,45 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #562870;
+}
+
+.wrap {
+  padding: 10px 0;
+  background-color: #ec008b;
+  box-shadow: 0 5px 5px rgba(216, 29, 172, 0.7);
+
+}
+
+.breadcrumb {
+  display: flex;
+  margin: auto;
+  width: 90%;
+
+  li {
+    padding: 0 20px;
+  }
+
+  a:hover,
+  li:last-child a {
+    color: rgb(255, 228, 153);
+  }
+
+  li + li {
+    padding-left: 0;
+  }
+
+  li + li::before {
+    margin-right: 20px;
+    color: #fff;
+    content: '>';
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+}
