@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+* {
+  font-family: 'Noto Sans TC','Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-header {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fe70d8), to(#3713c1));
+  background: linear-gradient(0deg, #fe70d8, #3713c1);
+}
+
+.main-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.main-header .logo {
+  max-width: 100px;
+}
+
+.main-header .logo img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.main-header .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.main-header .main-nav a {
+  position: relative;
+  padding: 5px 1em;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.main-header .main-nav a:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.main-header .main-nav a::after {
+  position: absolute;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  content: '';
+  border-bottom: 1px solid #fff;
+}
+
+.main-header .main-nav a:hover::after {
+  right: 0;
+  left: 0;
+}
+
+.main-header .header-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-header .header-search button,
+.main-header .header-search input {
+  padding: 5px 10px;
+  background-color: #fff;
+  border: none;
+}
+
+.main-header .header-search button:focus,
+.main-header .header-search input:focus {
+  outline: none;
+}
+
+.main-header .header-search button {
+  border-radius: 0 200px 200px 0;
+}
+
+.main-header .header-search input {
+  border-radius: 200px 0 0 200px;
+}
+/*# sourceMappingURL=day-07.css.map */
