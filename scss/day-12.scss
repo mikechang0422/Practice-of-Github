@@ -10,3 +10,89 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(90deg, #3d5894, #08c7a5);
+}
+
+.table {
+  margin: auto;
+  width: 800px;
+
+  caption {
+    padding: 10px 0;
+    text-align: right;
+    caption-side: bottom;
+    color: #fffafa;
+
+    a {
+      color: #eee;
+    }
+  }
+
+  table {
+    width: 100%;
+    background-color: #fff;
+    border: 5px double #666;
+    border-radius: 10px;
+
+  }
+
+  th {
+    padding: 6px 10px;
+    border: 1px solid #666;
+  }
+
+  td {
+    padding: 6px 10px;
+    border: 1px solid #666;
+  }
+
+  thead {
+    color: #fff;
+    background: #333;
+    font-weight: 700;
+
+    th:first-child {
+      border-radius: 7px 0 0;
+    }
+
+    th:last-child {
+      border-radius: 0 7px 0 0;
+    }
+  }
+
+  tbody {
+    font-weight: 400;
+
+    tr:nth-child(even) {
+      background-color: #fac;
+    }
+
+    tr:hover {
+      background-color: #fa9;
+    }
+
+    a {
+      color: rgb(245, 72, 245);
+    }
+  }
+
+  tfoot {
+    th:first-child {
+      border-radius: 0 0 0 7px;
+    }
+
+    th:last-child {
+      border-radius: 0 0 7px;
+    }
+  } 
+
+}
