@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+* {
+  font-family: 'Noto Sans TC','Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3d5894), to(#08c7a5));
+  background-image: linear-gradient(90deg, #3d5894, #08c7a5);
+}
+
+.table {
+  margin: auto;
+  width: 800px;
+}
+
+.table caption {
+  padding: 10px 0;
+  text-align: right;
+  caption-side: bottom;
+  color: #fffafa;
+}
+
+.table caption a {
+  color: #eee;
+}
+
+.table table {
+  width: 100%;
+  background-color: #fff;
+  border: 5px double #666;
+  border-radius: 10px;
+}
+
+.table th {
+  padding: 6px 10px;
+  border: 1px solid #666;
+}
+
+.table td {
+  padding: 6px 10px;
+  border: 1px solid #666;
+}
+
+.table thead {
+  color: #fff;
+  background: #333;
+  font-weight: 700;
+}
+
+.table thead th:first-child {
+  border-radius: 7px 0 0;
+}
+
+.table thead th:last-child {
+  border-radius: 0 7px 0 0;
+}
+
+.table tbody {
+  font-weight: 400;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #fac;
+}
+
+.table tbody tr:hover {
+  background-color: #fa9;
+}
+
+.table tbody a {
+  color: #f548f5;
+}
+
+.table tfoot th:first-child {
+  border-radius: 0 0 0 7px;
+}
+
+.table tfoot th:last-child {
+  border-radius: 0 0 7px;
+}
+/*# sourceMappingURL=day-12.css.map */

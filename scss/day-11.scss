@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+* {
+  font-family: 'Noto Sans TC','Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(-45deg, #fffaf0, #f8c3c1);
+}
+
+.wrap {
+  display: flex;
+  padding-top: 80px;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.item {
+  margin: 0 15px;
+  width: 33.33%;
+  text-align: center;
+  background-color: #333;
+  border: 10px solid #f9cec2;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 10px 20px 50px #f7b6a7;
+
+  h3 {
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    color: #f5afac;
+    font-weight: 700;
+  }
+
+  p {
+    color: #fffaf0;
+    font-weight: 100;
+    line-height: 1.5;
+  }
+
+  .icon {
+    position: relative;
+    margin: -75px auto 0;
+    width: 150px;
+    height: 150px;
+    font-size: 85px;
+    color: #f5afac;
+    background-color: #333;
+    border-radius: 50%;
+    line-height: 150px;
+  }
+
+  .icon::before {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    border-top: 10px solid #f9cec2;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #f9cec2;
+    transform: rotate(-45deg);
+  }
+
+  .txt {
+    padding: 20px 20px 2em;
+  }
+
+}
+
+.item:hover .fab,
+.item:hover .fas {
+  animation: an 0.5s linear infinite alternate;
+}
+@keyframes an {
+  0% { transform: rotate(-10deg); }
+  100% { transform: rotate(10deg);}
+      
+}

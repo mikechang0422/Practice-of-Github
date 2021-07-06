@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+* {
+  font-family: 'Noto Sans TC','Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+.wrap {
+  overflow: hidden;
+  margin: auto;
+  width: 960px;
+  max-width: 100%;
+}
+
+.item {
+  position: relative;
+  float: left;
+
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fffafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: 0.3s 0.1s;
+    box-sizing: border-box;
+    flex-direction: column;
+    transform: scale(0);
+
+  }
+
+  h3 {
+    margin-bottom: 0.4em;
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 100;
+    line-height: 1.6;
+  }
+}
+
+.item:first-child {
+  width: 50%;
+}
+
+.item:first-child ~ .item {
+  width: 25%;
+}
+
+.item:hover .txt {
+  opacity: 1;
+  transform: scale(1);
+}
