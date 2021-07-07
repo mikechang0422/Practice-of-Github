@@ -10,3 +10,68 @@
   list-style: none;
   box-sizing: border-box;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-color: #546377;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fff;
+    background-image: linear-gradient(9deg, #185a9d, #43cea2);
+    flex-direction: column;
+
+    .fas {
+      margin-bottom: 6px;
+      font-size: 60px;
+    }
+
+    + li {
+      margin-left: 100px;
+    }
+
+    + li::before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -100px;
+      z-index: -1;
+      margin: auto;
+      width: 100px;
+      height: 5px;
+      background-color: #43cea2;
+      box-shadow: 0 0 0 3px #fff;
+      content: '';
+    }
+  }
+
+  li.active {
+    ~ li {
+      background-image: linear-gradient(9deg, #999, #ccc);
+    }
+
+    ~li::before {
+      background-color: #ccc;
+    }
+  }
+}
