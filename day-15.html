@@ -9,19 +9,47 @@
     <title>多層次收合式-Aside</title>
 </head>
 <body>
-    <input type="checkbox" name="" class="side-menu-switch" id="side-menu-switch">
+    <input type="checkbox" name="" class="side-menu-switch" id="side-menu-switch" checked>
     <div class="side-menu">
         <form action="">
             <input type="search" placeholder="請輸入關鍵字" name="" id="">
             <button><i class="fas fa-search"></i></button>
         </form>
-        <nav>
-            <a href="#"><i class="fas fa-chess-bishop"></i>不</a>
-            <a href="#"><i class="fas fa-chess-king"></i>想</a>
-            <a href="#"><i class="fas fa-chess-knight"></i>面</a>
-            <a href="#"><i class="fas fa-chess-queen"></i>對</a>
-            <a href="#"><i class="fas fa-chess-rook"></i>拉</a>
-        </nav>
+        <ul class="nav">
+            <li>
+                <a href="#"><i class="fas fa-chess-bishop"></i>不</a>
+                <ul>
+                    <li>
+                        <a href="#">前</a>
+                        <ul>
+                            <li><a href="#">前</a></li>
+                            <li><a href="#">端</a></li>
+                            <li><a href="#">設</a></li>
+                            <li><a href="#">計</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">端</a>
+                        <ul>
+                            <li><a href="#">前</a></li>
+                            <li><a href="#">端</a></li>
+                            <li><a href="#">工</a></li>
+                            <li><a href="#">程</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">分</a>
+                    </li>
+                    <li>
+                        <a href="#">類</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-chess-king"></i>想</a></li>
+            <li><a href="#"><i class="fas fa-chess-knight"></i>面</a></li>
+            <li><a href="#"><i class="fas fa-chess-queen"></i>對</a></li>
+            <li><a href="#"><i class="fas fa-chess-rook"></i>拉</a></li>
+        </ul>
         <label for="side-menu-switch">
             <i class="fas fa-angle-right"></i>
         </label>

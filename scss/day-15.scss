@@ -60,7 +60,50 @@ body {
     }
   }
 
-  nav {
+  .nav {
+    ul {
+      position: absolute;
+      top: 0.5em;
+      left: 100%;
+      display: none;
+      width: 300px;
+      background-color: rgba(255, 255, 255, 0.6);
+      box-shadow: 5px 5px 10px hsla(240, 40%, 15%, 0.6);
+      transition: display 0.5 0.5s;
+
+    }
+
+    li {
+      position: relative;
+
+      + li a::before {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        left: 10px;
+        content: '';
+        border-top: 1px solid rgb(255, 255, 255);
+      }
+    }
+
+    li:hover {
+      > ul {
+        display: block;
+
+      }
+
+      > a {
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+      }
+
+      .fas {
+        margin-right: 0.2em;
+        transform: scale(1);
+      }
+  
+    }
+
     a {
       position: relative;
       display: block;
@@ -73,25 +116,12 @@ body {
       }
     }
 
-    a + a::before {
-      position: absolute;
-      top: 0;
-      right: 10px;
-      left: 10px;
-      content: '';
-      border-top: 1px solid rgb(255, 255, 255);
-    }
-
     a .fas {
       margin-right: -1.1em;
       transition: 0.3s;
       transform: scale(0);
     }
 
-    a:hover .fas {
-      margin-right: 0.2em;
-      transform: scale(1);
-    }
   }
 
   label {
