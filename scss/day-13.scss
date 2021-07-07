@@ -32,7 +32,7 @@ body {
   form {
     display: flex;
     margin: 0 10px 50px;
-    border: 1px solid rgb(255, 255, 255, 0.4);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 100px;
 
     input,
@@ -76,7 +76,7 @@ body {
       right: 10px;
       left: 10px;
       content: '';
-      border-top: 1px solid rgb(255, 255, 255, 0.4);
+      border-top: 1px solid rgb(255, 255, 255);
     }
 
     a .fas {

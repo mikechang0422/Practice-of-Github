@@ -40,7 +40,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 0 10px 50px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid white;
   border-radius: 100px;
 }
 
@@ -83,7 +83,7 @@ body {
   right: 10px;
   left: 10px;
   content: '';
-  border-top: 1px solid #fff;
+  border-top: 1px solid white;
 }
 
 .side-menu nav a .fas {
