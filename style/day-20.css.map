@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,8FAAI;AAEZ,OAAO,CAAC,wFAAI;AAEZ,OAAO,CAAC,+DAAI;AAEZ,AAAA,CAAC,CAAC;EACA,WAAW,EAAE,uCAAuC;EACpD,eAAe,EAAE,IAAI;EACrB,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,UAAU;CACvB",
+    "sources": [
+        "../scss/day-20.scss"
+    ],
+    "names": [],
+    "file": "day-20.css"
+}
