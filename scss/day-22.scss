@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+
+* {
+  font-family: 'Noto Sans TC','Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.font-style-1 {
+  .container {
+    position: relative;
+    display: flex;
+    padding: 100px 0;
+    margin: auto;
+    width: 1200px;
+
+    h2 {
+      padding: 10px 15px 0;
+      width: 400px;
+      font-size: 2em;
+      text-align: right;
+      background-color: #d5c7b9;
+      font-weight: 900;
+    }
+
+    h2::after {
+      display: block;
+      margin-left: auto;
+      width: 4em;
+      height: 4px;
+      background-color: #000;
+      content: '';
+    }
+
+    .txt {
+      padding: 0 15px;
+      width: 800px;
+      font-size: 16px;
+      font-weight: 400;
+      column-count: 2;
+      column-gap: 30px;
+    }
+  }
+
+  .container::after {
+    position: absolute;
+    top: 100%;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    content: '';
+  }
+}
+
+.font-style-2 {
+  .container {
+    position: relative;
+    padding: 100px 0;
+    margin: auto;
+    width: 1200px;
+
+    h2 {
+      float: left;
+      padding: 15px;
+      margin-right: 0.5em;
+      width: 300px;
+      font-size: 2em;
+      text-align: right;
+      font-weight: 900;
+      border-right: 3px solid #000;
+    }
+
+    .txt {
+      padding: 0 15px;
+      width: 800px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .container::after {
+    position: absolute;
+    top: 100%;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    content: '';
+  }
+}
+
+.font-style-3 {
+  .container {
+    position: relative;
+    padding: 100px 0;
+    margin: auto;
+    width: 1200px;
+
+    h2 {
+      position: relative;
+      padding: 0 15px 15px;
+      margin-bottom: 0.3em;
+      font-size: 5em;
+      color: #aaa;
+      font-weight: 900;
+    }
+
+    h2::after {
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+      display: block;
+      width: 100%;
+      height: 50px;
+      background-color: #eee;
+      content: '';
+    }
+
+    .txt {
+      padding: 0 15px;
+      width: 800px;
+      font-size: 16px;
+      font-weight: 400;
+      column-count: 2;
+      column-gap: 30px;
+
+      p::first-letter {
+        float: left;
+        font-size: 2em;
+      }
+    }
+  }
+
+  .container::after {
+    position: absolute;
+    top: 100%;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    content: '';
+  }
+}
