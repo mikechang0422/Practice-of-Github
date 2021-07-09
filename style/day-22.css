@@ -17,12 +17,13 @@
   padding: 100px 0;
   margin: auto;
   width: 1200px;
+  max-width: 100%;
 }
 
 .font-style-1 .container h2 {
   padding: 10px 15px 0;
   width: 400px;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: right;
   background-color: #d5c7b9;
   font-weight: 900;
@@ -48,6 +49,11 @@
           column-gap: 30px;
 }
 
+.font-style-1 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
 .font-style-1 .container::after {
   position: absolute;
   top: 100%;
@@ -62,11 +68,13 @@
   position: relative;
   padding: 100px 0;
   margin: auto;
-  width: 1200px;
+  width: 800px;
+  max-width: 100%;
 }
 
 .font-style-2 .container h2 {
   float: left;
+  clear: left;
   padding: 15px;
   margin-right: 0.5em;
   width: 300px;
@@ -78,16 +86,23 @@
 
 .font-style-2 .container .txt {
   padding: 0 15px;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.font-style-2 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
 }
 
 .font-style-2 .container::after {
   position: absolute;
   top: 100%;
+  right: -25%;
   display: block;
-  width: 100%;
+  width: 150%;
   height: 5px;
   background-color: #ccc;
   content: '';
@@ -98,6 +113,7 @@
   padding: 100px 0;
   margin: auto;
   width: 1200px;
+  max-width: 100%;
 }
 
 .font-style-3 .container h2 {
@@ -131,6 +147,11 @@
           column-gap: 30px;
 }
 
+.font-style-3 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
 .font-style-3 .container .txt p::first-letter {
   float: left;
   font-size: 2em;
@@ -139,6 +160,777 @@
 .font-style-3 .container::after {
   position: absolute;
   top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-4 .container {
+  position: relative;
+  padding: 100px 0;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.font-style-4 .container h2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  margin: auto;
+  width: 300px;
+  height: 80%;
+  font-size: 3em;
+  text-align: center;
+  color: #000;
+  background-color: #ccc;
+  font-weight: 900;
+}
+
+.font-style-4 .container .txt {
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 400px;
+          column-gap: 400px;
+}
+
+.font-style-4 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-4 .container .txt p::first-letter {
+  float: left;
+  font-size: 2em;
+}
+
+.font-style-4 .container::after {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-5 .container {
+  position: relative;
+  padding: 100px 0;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.font-style-5 .container h2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  padding: 15px;
+  margin: auto;
+  width: 300px;
+  font-size: 5em;
+  color: #aaa;
+  font-weight: 900;
+}
+
+.font-style-5 .container h2::before {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: -1;
+  display: block;
+  width: 200px;
+  height: 200px;
+  border: 30px solid #eee;
+  content: '';
+}
+
+.font-style-5 .container .txt {
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.font-style-5 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-5 .container .txt p:first-child::first-letter {
+  float: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-5 .container::after {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-6 .container {
+  position: relative;
+  padding: 100px 0;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.font-style-6 .container h2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  padding: 15px;
+  margin: auto;
+  width: 300px;
+  font-size: 5em;
+  color: #aaa;
+  font-weight: 900;
+}
+
+.font-style-6 .container h2::before {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 30px solid #f1c555;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  content: '';
+}
+
+.font-style-6 .container .txt {
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.font-style-6 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-6 .container .txt p:first-child::first-letter {
+  float: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-6 .container::after {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-7 .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  padding: 100px 0;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.font-style-7 .container h2 {
+  padding: 15px;
+  margin-left: 30px;
+  width: 300px;
+  font-size: 5em;
+  color: #00aaaa;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-shadow: 5px 5px rgba(0, 170, 170, 0.3);
+}
+
+.font-style-7 .container h2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border: 30px solid rgba(0, 170, 130, 0.7);
+  content: '';
+  -webkit-transform: rotate(10deg) translate(-5%, -5%);
+          transform: rotate(10deg) translate(-5%, -5%);
+}
+
+.font-style-7 .container h2::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 200px;
+  height: 200px;
+  border: 30px solid rgba(0, 170, 170, 0.7);
+  content: '';
+  -webkit-transform: rotate(20deg) translate(-5%, -5%);
+          transform: rotate(20deg) translate(-5%, -5%);
+}
+
+.font-style-7 .container .txt {
+  padding: 0 15px;
+  margin: 0 30px;
+  width: 800px;
+  font-size: 16px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(0, 170, 170, 0.5), 0 0 30px 5px rgba(0, 170, 170, 0.6), 0 0 30px 10px rgba(0, 170, 170, 0.7);
+          box-shadow: 0 0 30px 0 rgba(0, 170, 170, 0.5), 0 0 30px 5px rgba(0, 170, 170, 0.6), 0 0 30px 10px rgba(0, 170, 170, 0.7);
+  font-weight: 400;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-7 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-7 .container .txt p:first-child::first-letter {
+  float: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-7 .container::after {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-8 .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+  margin: auto;
+  width: 1200px;
+  max-width: 100%;
+}
+
+.font-style-8 .container h2 {
+  position: relative;
+  padding: 15px;
+  margin-left: 30px;
+  width: 300px;
+  font-size: 3em;
+  color: #aaa;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-transform: rotate(90deg) translateY(-300px);
+          transform: rotate(90deg) translateY(-300px);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+.font-style-8 .container .txt {
+  padding: 0 15px;
+  width: 800px;
+  font-size: 16px;
+  border-radius: 15px;
+  font-weight: 400;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-shadow: 0 0 10px 1px #ccc;
+          box-shadow: 0 0 10px 1px #ccc;
+}
+
+.font-style-8 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-8 .container .txt p:first-child::first-letter {
+  float: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-8 .container::after {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-9 .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+  padding: 100px 0;
+  margin: 100px auto;
+  width: 1200px;
+  max-width: 100%;
+  -webkit-box-shadow: 0 0 10px 1px rgba(204, 204, 204, 0.6);
+          box-shadow: 0 0 10px 1px rgba(204, 204, 204, 0.6);
+}
+
+.font-style-9 .container h2 {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  font-size: 20em;
+  color: #ddd;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-9 .container .txt {
+  z-index: 1;
+  padding: 0 15px;
+  width: 50%;
+  font-size: 16px;
+  border-radius: 15px;
+  font-weight: 400;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-9 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-9 .container .txt p:first-child::first-letter {
+  float: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-9 .container::after {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-10 .container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+  padding: 100px 0;
+  margin: 100px auto;
+  width: 1200px;
+  max-width: 100%;
+  -webkit-box-shadow: 0 0 10px 1px rgba(204, 204, 204, 0.6);
+          box-shadow: 0 0 10px 1px rgba(204, 204, 204, 0.6);
+}
+
+.font-style-10 .container h2 {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding-left: 15px;
+  width: 100%;
+  font-size: 15em;
+  color: #fff;
+  font-weight: 700;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-shadow: 10px 10px 0 #eee;
+  line-height: 0.9;
+}
+
+.font-style-10 .container .txt {
+  z-index: 1;
+  padding: 0 15px;
+  width: 50%;
+  font-size: 16px;
+  border-radius: 15px;
+  font-weight: 400;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-10 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-10 .container .txt p:first-child::first-letter {
+  float: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-10 .container::after {
+  position: absolute;
+  top: 100%;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-11 .container {
+  position: relative;
+  padding: 100px 0;
+  margin: 200px auto;
+  margin-bottom: 100px;
+  width: 1200px;
+  max-width: 100%;
+  text-align: center;
+  background: #000;
+}
+
+.font-style-11 .container h2 {
+  width: 100%;
+  font-size: 3em;
+  color: #a00;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-11 .container .txt {
+  font-size: 16px;
+  color: #fff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-weight: 400;
+}
+
+.font-style-11 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-11 .container .txt p:first-child::first-letter {
+  float: left;
+  clear: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-11 .container::after {
+  position: absolute;
+  top: -100px;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-12 .container {
+  position: relative;
+  margin: 200px auto;
+  width: 1200px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.font-style-12 .container h2 {
+  margin-bottom: 0.5em;
+  width: 100%;
+  font-size: 3em;
+  color: #000;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.font-style-12 .container .txt {
+  font-size: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-weight: 400;
+}
+
+.font-style-12 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-12 .container .txt p:first-child::first-letter {
+  float: left;
+  clear: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-12 .container::after {
+  position: absolute;
+  top: -100px;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-13 .container {
+  position: relative;
+  margin: 100px auto;
+  width: 1200px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.font-style-13 .container h2 {
+  margin-bottom: 0.5em;
+  width: 100%;
+  font-size: 3em;
+  color: #000;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-13 .container h2::after {
+  display: block;
+  margin: auto;
+  width: 4em;
+  height: 2px;
+  background-color: #aaa;
+  content: '';
+}
+
+.font-style-13 .container .txt {
+  font-size: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-weight: 400;
+}
+
+.font-style-13 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-13 .container .txt p:first-child::first-letter {
+  float: left;
+  clear: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-13 .container::after {
+  position: absolute;
+  top: -100px;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-14 .container {
+  position: relative;
+  margin: 200px auto;
+  width: 1200px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.font-style-14 .container h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5em;
+  width: 100%;
+  font-size: 4em;
+  color: #000;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-14 .container h2::after,
+.font-style-14 .container h2::before {
+  display: block;
+  margin: auto;
+  width: 4em;
+  height: 2px;
+  background-color: #aaa;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  content: '';
+}
+
+.font-style-14 .container h2::before {
+  margin-right: 0.4em;
+}
+
+.font-style-14 .container h2::after {
+  margin-left: 0.4em;
+}
+
+.font-style-14 .container .txt {
+  font-size: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-weight: 400;
+}
+
+.font-style-14 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-14 .container .txt p:first-child::first-letter {
+  float: left;
+  clear: left;
+  padding-right: 0.5em;
+  font-size: 2em;
+}
+
+.font-style-14 .container::after {
+  position: absolute;
+  top: -100px;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  content: '';
+}
+
+.font-style-15 .container {
+  position: relative;
+  margin: 200px auto;
+  width: 1200px;
+  max-width: 100%;
+  text-align: center;
+}
+
+.font-style-15 .container h2 {
+  margin-bottom: 0.5em;
+  width: 100%;
+  font-size: 4em;
+  color: #000;
+  font-weight: 900;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.font-style-15 .container .txt {
+  position: relative;
+  padding: 1em;
+  font-size: 16px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  font-weight: 400;
+}
+
+.font-style-15 .container .txt p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+.font-style-15 .container .txt::before,
+.font-style-15 .container .txt::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.font-style-15 .container .txt::before {
+  top: 0;
+  left: 0;
+  border-top: 3px solid #aaa;
+  border-left: 3px solid #aaa;
+}
+
+.font-style-15 .container .txt::after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid #aaa;
+  border-bottom: 3px solid #aaa;
+}
+
+.font-style-15 .container::after {
+  position: absolute;
+  top: -100px;
   display: block;
   width: 100%;
   height: 5px;
