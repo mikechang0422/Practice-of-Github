@@ -123,8 +123,9 @@ body {
 .wrap-horizontal {
   display: flex;
   align-items: center;
-  height: 50vh;
-  background: linear-gradient(10deg, #43cea2, rgba(255, 255, 255, 0.7), #185a9d);
+  padding: 100px 0;
+  margin: 100px auto;
+  background: linear-gradient(3deg, #185a9d, rgba(255, 255, 255, 0.7), #43cea2, rgba(255, 255, 255, 0.7), #185a9d);
 
   .container {
     display: flex;
