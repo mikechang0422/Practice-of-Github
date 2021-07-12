@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.3/css/all.css");
+* {
+  font-family: 'Noto Sans TC','Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.banner {
+  height: 700px;
+  background: url("../images/kitty-cat-helps-at-work-low-res.jpg") center top/cover;
+}
+
+.sec {
+  position: relative;
+}
+
+.sec .container {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+  margin: auto;
+  width: 1200px;
+}
+
+.sec .item {
+  margin: 0 15px;
+  width: 600px;
+}
+
+.sec .item h2 {
+  margin-bottom: 1.3em;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.sec .item p {
+  line-height: 1.7;
+  margin-bottom: 1.6em;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.sec::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 178px 0 0 30px #fff, 400px 9px 0 60px #fff, 690px 71px 0 60px #fff, 880px 0 0 89px #fff, -178px 0 0 30px #fff, -400px 9px 0 60px #fff, -690px 71px 0 60px #fff, -880px 0 0 89px #fff, -1100px 50px 0 89px #fff, 100px 0 0 56px rgba(0, 0, 10, 0.5), 298px 10px 0 56px rgba(0, 0, 10, 0.5), 540px -40px 0 50px rgba(0, 0, 10, 0.5), 740px -30px 0 30px rgba(0, 0, 10, 0.5), 880px -100px 0 80px rgba(0, 0, 10, 0.5), -60px 0 0 56px rgba(0, 0, 10, 0.5), -298px 10px 0 56px rgba(0, 0, 10, 0.5), -540px -40px 0 50px rgba(0, 0, 10, 0.5), -740px -30px 0 30px rgba(0, 0, 10, 0.5), -780px -70px 0 80px rgba(0, 0, 10, 0.5), -1200px 0 0 80px rgba(0, 0, 10, 0.5);
+          box-shadow: 178px 0 0 30px #fff, 400px 9px 0 60px #fff, 690px 71px 0 60px #fff, 880px 0 0 89px #fff, -178px 0 0 30px #fff, -400px 9px 0 60px #fff, -690px 71px 0 60px #fff, -880px 0 0 89px #fff, -1100px 50px 0 89px #fff, 100px 0 0 56px rgba(0, 0, 10, 0.5), 298px 10px 0 56px rgba(0, 0, 10, 0.5), 540px -40px 0 50px rgba(0, 0, 10, 0.5), 740px -30px 0 30px rgba(0, 0, 10, 0.5), 880px -100px 0 80px rgba(0, 0, 10, 0.5), -60px 0 0 56px rgba(0, 0, 10, 0.5), -298px 10px 0 56px rgba(0, 0, 10, 0.5), -540px -40px 0 50px rgba(0, 0, 10, 0.5), -740px -30px 0 30px rgba(0, 0, 10, 0.5), -780px -70px 0 80px rgba(0, 0, 10, 0.5), -1200px 0 0 80px rgba(0, 0, 10, 0.5);
+  content: '';
+  -webkit-transform: translateX(-30%) translateY(-50%);
+          transform: translateX(-30%) translateY(-50%);
+}
+
+.sec::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  content: '';
+}
+/*# sourceMappingURL=day-21.css.map */
